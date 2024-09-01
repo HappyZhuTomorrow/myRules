@@ -212,9 +212,8 @@ if (url.includes("/x/resource/show/skin")) {
   if (obj?.data?.new_tab_info?.outer_list?.length > 0) {
     obj.data.new_tab_info.outer_list = obj.data.new_tab_info.outer_list.filter((i) => i?.biz_id !== 33);
   }
-  if (obj?.data?.block_info?.block) {
-        obj.data.block_info.block = false;
-        obj.data.block_info.desc = "";
+  if (obj?.data?.block_info) {
+        obj.data.block_info = {block: false, desc: "" };
     }
 }
 
