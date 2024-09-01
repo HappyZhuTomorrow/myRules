@@ -204,6 +204,7 @@ if (url.includes("/x/resource/show/skin")) {
 } else if (url.includes("/xlive/app-room/v1/index/getInfoByRoom")) {
   // 直播
   obj.data.room_info.title = "偶也 看看冒泡赛咯";
+  obj.data.block_info.block = false;
 }
 
 $done({ body: JSON.stringify(obj) });
