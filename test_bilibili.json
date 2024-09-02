@@ -216,7 +216,7 @@ if (url.includes("/x/resource/show/skin")) {
   }
   
   if (obj?.data?.dm_combo) {
-      delete obj.data.dm_combo;
+      obj.data.dm_combo = null;
   }
 }
 
