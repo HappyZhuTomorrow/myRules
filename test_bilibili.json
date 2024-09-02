@@ -214,6 +214,10 @@ if (url.includes("/x/resource/show/skin")) {
   if (obj?.data?.new_tab_info?.outer_list?.length > 0) {
     obj.data.new_tab_info.outer_list = obj.data.new_tab_info.outer_list.filter((i) => i?.biz_id !== 33);
   }
+  
+  if (obj?.data?.dm_combo) {
+      delete obj.data.dm_combo;
+  }
 }
 
 $done({ body: JSON.stringify(obj) });
